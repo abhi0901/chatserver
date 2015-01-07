@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'socket.io' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json socket-chat-example@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'socket.io@1.2.0', null ]
+7 verbose cache add name=undefined spec="socket.io@1.2.0" args=["socket.io@1.2.0",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'socket.io@1.2.0',
+8 verbose parsed url   path: 'socket.io@1.2.0',
+8 verbose parsed url   href: 'socket.io@1.2.0' }
+9 verbose cache add name="socket.io" spec="1.2.0" args=["socket.io","1.2.0"]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '1.2.0',
+10 verbose parsed url   path: '1.2.0',
+10 verbose parsed url   href: '1.2.0' }
+11 verbose addNamed [ 'socket.io', '1.2.0' ]
+12 verbose addNamed [ '1.2.0', '1.2.0' ]
+13 silly lockFile 1b93a138-socket-io-1-2-0 socket.io@1.2.0
+14 verbose lock socket.io@1.2.0 /Users/magic/.npm/1b93a138-socket-io-1-2-0.lock
+15 verbose request where is /socket.io
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id 6becf894c5b605d7
+18 verbose url raw /socket.io
+19 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+20 verbose url resolved https://registry.npmjs.org/socket.io
+21 verbose request where is https://registry.npmjs.org/socket.io
+22 info trying registry request attempt 1 at 13:41:57
+23 verbose etag "2V7FQQPBWEYB16EA95MPILF10"
+24 http GET https://registry.npmjs.org/socket.io
+25 http 304 https://registry.npmjs.org/socket.io
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Wed, 07 Jan 2015 08:11:58 GMT',
+26 silly registry.get     server: 'Apache',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'last-modified': 'Wed, 07 Jan 2015 08:11:58 GMT',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"2V7FQQPBWEYB16EA95MPILF10"',
+26 silly registry.get     age: '41',
+26 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1420618318.613229,VS0,VE0',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'content-length': '0',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 verbose etag https://registry.npmjs.org/socket.io from cache
+28 silly lockFile e37968a4-rg-socket-io-socket-io-1-2-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+29 verbose lock https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz /Users/magic/.npm/e37968a4-rg-socket-io-socket-io-1-2-0-tgz.lock
+30 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz',
+30 verbose addRemoteTarball   '02f00ffc24626294f46924d4c25ce35a9b940789' ]
+31 info retry fetch attempt 1 at 13:41:58
+32 verbose fetch to= /var/folders/h9/5qbb52097z55tv140wjxthnh0000gn/T/npm-5920-YpBuLP_c/registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+33 http GET https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+34 http 200 https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+35 silly lockFile e37968a4-rg-socket-io-socket-io-1-2-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+36 silly lockFile e37968a4-rg-socket-io-socket-io-1-2-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.2.0.tgz
+37 silly lockFile 1b93a138-socket-io-1-2-0 socket.io@1.2.0
+38 silly lockFile 1b93a138-socket-io-1-2-0 socket.io@1.2.0
+39 error Error: EACCES, mkdir '/Users/magic/.npm/socket.io/1.2.0'
+39 error  { [Error: EACCES, mkdir '/Users/magic/.npm/socket.io/1.2.0']
+39 error   errno: 3,
+39 error   code: 'EACCES',
+39 error   path: '/Users/magic/.npm/socket.io/1.2.0',
+39 error   parent: 'socket-chat-example' }
+40 error Please try running this command again as root/Administrator.
+41 error System Darwin 14.0.0
+42 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "socket.io"
+43 error cwd /Users/magic/Documents/nodeProject/chatServer
+44 error node -v v0.10.32
+45 error npm -v 1.4.28
+46 error path /Users/magic/.npm/socket.io/1.2.0
+47 error code EACCES
+48 error errno 3
+49 error stack Error: EACCES, mkdir '/Users/magic/.npm/socket.io/1.2.0'
+50 verbose exit [ 3, true ]
