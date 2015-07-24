@@ -1,5 +1,5 @@
 {
-  "name": "Chat Server",
+  "name": "ChatServer",
   "version": "0.0.1",
   "description": "Chat Server Example Using Node.js",
   "dependencies": {
